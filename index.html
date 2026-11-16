@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>WINSYS Laptops | Kaduwela</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0b0a08; --coal:#151310; --edge:#2b2720; --gold:#c9a24a; --gold-2:#e5c876;
+    --silver:#d8d8d6; --text:#ecebe7; --muted:#9a968c; --wa:#1faa52;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--black);color:var(--text);font-family:'Manrope',system-ui,sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+  a{color:inherit}
+  h1,h2,h3{font-family:'Cinzel',Georgia,serif;font-weight:700;margin:0;line-height:1.1;letter-spacing:.03em}
+  .wrap{width:min(1100px,92vw);margin:0 auto}
+  .label{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:800}
+  .btn{display:inline-block;padding:.85rem 1.4rem;border-radius:6px;font-weight:800;text-decoration:none;font-size:.94rem;border:1px solid transparent;cursor:pointer;font-family:inherit}
+  .btn-gold{background:linear-gradient(180deg,var(--gold-2),var(--gold));color:#17130a}
+  .btn-gold:hover{filter:brightness(1.08)}
+  .btn-line{border-color:var(--edge);color:var(--text);background:transparent}
+  .btn-line:hover{border-color:var(--gold)}
+
+  .demo-banner{background:#1d1708;color:#e9dcb4;font-size:.78rem;text-align:center;padding:.5rem 1rem;border-bottom:1px solid #3a2f12}
+
+  header{border-bottom:1px solid var(--edge);background:var(--black);position:sticky;top:0;z-index:20}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .brand{display:flex;align-items:center;gap:.65rem;text-decoration:none}
+  .brand img{width:46px;height:46px;border-radius:50%;border:1px solid var(--edge)}
+  .brand b{font-family:'Cinzel',serif;font-size:1.3rem;letter-spacing:.14em;color:var(--silver)}
+  nav{display:flex;gap:1.6rem;align-items:center;font-size:.92rem;font-weight:600}
+  nav a{text-decoration:none}
+  nav a:hover{color:var(--gold-2)}
+  .menu-btn{display:none;background:none;border:1px solid var(--edge);color:var(--text);border-radius:6px;padding:.4rem .8rem;font-family:inherit;font-weight:700;cursor:pointer}
+
+  /* hero */
+  .hero{padding:4.2rem 0 3.6rem;text-align:center;border-bottom:1px solid var(--edge);background:radial-gradient(70% 90% at 50% 0%,#1c1810,var(--black) 70%)}
+  .wordmark{font-family:'Cinzel',serif;font-weight:700;font-size:clamp(3.4rem,13vw,9rem);letter-spacing:.08em;line-height:.9;
+    background:linear-gradient(180deg,#fafafa 0%,#bdbdbb 55%,#8d8d8a 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{font-family:'Cinzel',serif;letter-spacing:.9em;color:var(--gold);font-size:clamp(.8rem,2.2vw,1.2rem);margin:.8rem 0 0 .9em}
+  .hero h1{font-size:clamp(1.6rem,3.6vw,2.4rem);margin:2.4rem 0 .8rem;color:var(--text)}
+  .hero p{color:var(--muted);max-width:520px;margin:0 auto 1.8rem}
+  .hero .btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+  .facts{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-top:2.4rem;font-size:.86rem;color:var(--muted)}
+  .facts b{color:var(--gold-2);display:block;font-size:1rem}
+
+  section{padding:4.6rem 0;border-bottom:1px solid var(--edge)}
+  .head{margin-bottom:2.2rem}
+  .head h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:.6rem 0 .6rem}
+  .head p{color:var(--muted);margin:0;max-width:560px}
+
+  /* finder */
+  .finder{display:grid;grid-template-columns:1.2fr .8fr;gap:1.4rem;align-items:start}
+  .steps{background:var(--coal);border:1px solid var(--edge);border-radius:10px;padding:1.8rem}
+  .step{margin-bottom:1.6rem}
+  .step:last-child{margin-bottom:0}
+  .step h3{font-family:'Manrope',sans-serif;font-weight:800;letter-spacing:0;font-size:1rem;margin-bottom:.8rem;display:flex;gap:.7rem;align-items:center}
+  .step h3 i{font-style:normal;width:26px;height:26px;border-radius:50%;border:1px solid var(--gold);color:var(--gold-2);display:grid;place-items:center;font-size:.8rem}
+  .chips{display:flex;flex-wrap:wrap;gap:.5rem}
+  .chip{border:1px solid var(--edge);background:#0f0e0b;color:var(--text);border-radius:6px;padding:.6rem .95rem;font-family:inherit;font-weight:600;font-size:.9rem;cursor:pointer}
+  .chip:hover{border-color:#5a4c28}
+  .chip[aria-pressed="true"]{border-color:var(--gold);background:#2a2210;color:var(--gold-2)}
+  .result{background:linear-gradient(180deg,#1c1709,#110f0a);border:1px solid #4a3c18;border-radius:10px;padding:1.8rem;position:sticky;top:90px}
+  .result h3{font-size:1.4rem;color:var(--gold-2);margin-bottom:.4rem}
+  .result .for{color:var(--muted);font-size:.9rem;margin:0 0 1.2rem}
+  .spec{display:grid;gap:.6rem;margin:0 0 1.2rem;padding:0;list-style:none}
+  .spec li{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid #2f2816;padding-bottom:.5rem;font-size:.92rem}
+  .spec li span{color:var(--muted)}
+  .spec li b{text-align:right}
+  .fine{font-size:.8rem;color:var(--muted);margin:.9rem 0 0}
+  .field{display:flex;flex-direction:column;gap:.35rem;margin-bottom:.9rem}
+  .field label{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800}
+  .field input{font:inherit;padding:.7rem .8rem;border-radius:6px;border:1px solid var(--edge);background:#0b0a08;color:var(--text)}
+  .field input:focus{outline:2px solid var(--gold);outline-offset:1px}
+  .send{width:100%;background:var(--wa);color:#fff;border:0;border-radius:6px;padding:.95rem;font-weight:800;font-family:inherit;font-size:.95rem;cursor:pointer}
+  .send:hover{background:#178a42}
+  .sent{display:none;margin-top:.8rem;font-size:.88rem;color:var(--muted);text-align:center}
+  .sent.show{display:block}
+  .sent a{color:var(--gold-2);font-weight:800}
+
+  /* shelf */
+  .shelf{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+  .item{background:var(--coal);border:1px solid var(--edge);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+  .item .ph{aspect-ratio:4/3;background:#1b1914 center/cover no-repeat;position:relative;display:grid;place-items:center}
+  .item .ph.has-img{background-image:var(--img)}
+  .item .ph svg{width:62%;opacity:.55}
+  .item .ph.has-img svg{display:none}
+  .item .ph em{position:absolute;left:8px;bottom:8px;font-style:normal;font-size:.68rem;background:rgba(0,0,0,.7);padding:.1rem .45rem;border-radius:4px;color:var(--muted)}
+  .item .ph.has-img em{display:none}
+  .item .body{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.4rem;flex:1}
+  .item h3{font-family:'Manrope',sans-serif;letter-spacing:0;font-size:1.05rem;font-weight:800}
+  .item p{margin:0;color:var(--muted);font-size:.86rem;flex:1}
+  .item button{margin-top:.5rem;background:none;border:1px solid var(--gold);color:var(--gold-2);border-radius:6px;padding:.55rem;font-family:inherit;font-weight:800;cursor:pointer;font-size:.86rem}
+  .item button:hover{background:#2a2210}
+
+  /* why */
+  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--edge);border-radius:10px;overflow:hidden}
+  .why div{padding:1.6rem;border-right:1px solid var(--edge)}
+  .why div:last-child{border-right:0}
+  .why h3{font-size:1.15rem;color:var(--gold-2);margin-bottom:.5rem}
+  .why p{margin:0;color:var(--muted);font-size:.92rem}
+
+  /* visit */
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+  .vbox{background:var(--coal);border:1px solid var(--edge);border-radius:10px;padding:1.8rem}
+  .vbox dl{margin:0;display:grid;gap:1rem}
+  .vbox dt{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:800}
+  .vbox dd{margin:.15rem 0 0}
+  .vbox a{color:var(--gold-2);font-weight:800}
+
+  footer{padding:2rem 0;color:var(--muted);font-size:.85rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;align-items:center}
+
+  .float-wa{position:fixed;right:14px;bottom:14px;z-index:19;background:var(--wa);color:#fff;text-decoration:none;padding:.75rem 1.1rem;border-radius:6px;font-weight:800;font-size:.88rem}
+
+  @media (max-width:920px){
+    .finder,.visit{grid-template-columns:1fr}
+    .result{position:static}
+    .shelf{grid-template-columns:1fr 1fr}
+    .why{grid-template-columns:1fr}
+    .why div{border-right:0;border-bottom:1px solid var(--edge)}
+    .why div:last-child{border-bottom:0}
+    nav{display:none}
+    nav.open{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:70px;left:0;right:0;background:var(--black);padding:1rem 4vw 1.3rem;border-bottom:1px solid var(--edge)}
+    .menu-btn{display:block}
+  }
+  @media (max-width:520px){
+    section{padding:3.4rem 0}
+    .steps,.result{padding:1.3rem}
+    .shelf{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-banner">DEMO by Code.lowa for WINSYS Laptops. Categories, price ranges and services are samples. Remove this bar after approval.</div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/logo.png" alt="WINSYS Laptops logo"><b>WINSYS</b></a>
+    <nav id="nav">
+      <a href="#finder">Find a laptop</a>
+      <a href="#shelf">Laptops</a>
+      <a href="#why">Why us</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="wordmark">WINSYS</div>
+      <div class="sub">LAPTOPS</div>
+      <h1>Your first laptop starts here.</h1>
+      <p>Tell us what you need it for and how much you want to spend. We'll match you with the right laptop and have it ready to check in the shop.</p>
+      <div class="btns">
+        <a class="btn btn-gold" href="#finder">Find my laptop</a>
+        <a class="btn btn-line" href="#visit">Visit the shop</a>
+      </div>
+      <div class="facts">
+        <div><b>Kaduwela</b>Near the highway</div>
+        <div><b>Open today</b>Until 6:00 PM</div>
+        <div><b>Students</b>First-laptop advice</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINDER -->
+  <section id="finder">
+    <div class="wrap">
+      <div class="head">
+        <div class="label">Laptop finder</div>
+        <h2>Three taps to the right laptop</h2>
+        <p>Pick your use, budget and condition. You'll see what to look for, then send it to us on WhatsApp.</p>
+      </div>
+      <div class="finder">
+        <div class="steps">
+          <div class="step">
+            <h3><i>1</i> What is it for?</h3>
+            <div class="chips" data-group="use">
+              <button type="button" class="chip" aria-pressed="true" data-v="Studies">Studies</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Office work">Office work</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Programming">Programming</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Design & editing">Design &amp; editing</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Gaming">Gaming</button>
+            </div>
+          </div>
+          <div class="step">
+            <h3><i>2</i> Your budget</h3>
+            <div class="chips" data-group="budget">
+              <button type="button" class="chip" aria-pressed="false" data-v="Under Rs. 100,000">Under 100k</button>
+              <button type="button" class="chip" aria-pressed="true" data-v="Rs. 100,000 to 200,000">100k to 200k</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Rs. 200,000 to 350,000">200k to 350k</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Above Rs. 350,000">350k+</button>
+            </div>
+          </div>
+          <div class="step">
+            <h3><i>3</i> New or used?</h3>
+            <div class="chips" data-group="cond">
+              <button type="button" class="chip" aria-pressed="false" data-v="Brand new">Brand new</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Used">Used</button>
+              <button type="button" class="chip" aria-pressed="true" data-v="Either">Either</button>
+            </div>
+          </div>
+          <div class="step">
+            <h3><i>4</i> Brand (optional)</h3>
+            <div class="chips" data-group="brand">
+              <button type="button" class="chip" aria-pressed="true" data-v="Any brand">Any</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="HP">HP</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Dell">Dell</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Lenovo">Lenovo</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Asus">Asus</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Acer">Acer</button>
+              <button type="button" class="chip" aria-pressed="false" data-v="Apple">Apple</button>
+            </div>
+          </div>
+        </div>
+
+        <form class="result" id="finderForm" aria-live="polite">
+          <h3 id="rTitle">For studies</h3>
+          <p class="for" id="rFor"></p>
+          <ul class="spec" id="rSpec"></ul>
+          <div class="field"><label for="fName">Your name</label><input id="fName" autocomplete="name" placeholder="Name" required></div>
+          <button class="send" type="submit">Ask WINSYS on WhatsApp</button>
+          <div class="sent" id="sent"></div>
+          <p class="fine">This is a general guide. The shop will suggest models that are in stock.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHELF -->
+  <section id="shelf">
+    <div class="wrap">
+      <div class="head">
+        <div class="label">On the shelf</div>
+        <h2>Laptops for every need</h2>
+        <p>Sample categories. Add real models, photos and prices from the shop.</p>
+      </div>
+      <div class="shelf">
+        <div class="item"><div class="ph" data-img="student.jpg"><svg viewBox="0 0 100 64" fill="none" stroke="#c9a24a" stroke-width="2"><rect x="16" y="6" width="68" height="44" rx="3"/><path d="M6 56h88l-6 6H12z"/></svg><em>student.jpg</em></div>
+          <div class="body"><h3>Student laptops</h3><p>Light, reliable machines for lectures, assignments and online classes.</p><button type="button" data-ask="Student laptops">Ask price</button></div></div>
+        <div class="item"><div class="ph" data-img="business.jpg"><svg viewBox="0 0 100 64" fill="none" stroke="#c9a24a" stroke-width="2"><rect x="16" y="6" width="68" height="44" rx="3"/><path d="M6 56h88l-6 6H12z"/></svg><em>business.jpg</em></div>
+          <div class="body"><h3>Business laptops</h3><p>Solid builds and good batteries for office work and travel.</p><button type="button" data-ask="Business laptops">Ask price</button></div></div>
+        <div class="item"><div class="ph" data-img="gaming.jpg"><svg viewBox="0 0 100 64" fill="none" stroke="#c9a24a" stroke-width="2"><rect x="16" y="6" width="68" height="44" rx="3"/><path d="M6 56h88l-6 6H12z"/></svg><em>gaming.jpg</em></div>
+          <div class="body"><h3>Gaming &amp; creator</h3><p>Dedicated graphics for games, video editing and design work.</p><button type="button" data-ask="Gaming and creator laptops">Ask price</button></div></div>
+        <div class="item"><div class="ph" data-img="used.jpg"><svg viewBox="0 0 100 64" fill="none" stroke="#c9a24a" stroke-width="2"><rect x="16" y="6" width="68" height="44" rx="3"/><path d="M6 56h88l-6 6H12z"/></svg><em>used.jpg</em></div>
+          <div class="body"><h3>Used laptops</h3><p>Checked, budget-friendly options for a first laptop.</p><button type="button" data-ask="Used laptops">Ask price</button></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section id="why">
+    <div class="wrap">
+      <div class="head">
+        <div class="label">Why WINSYS</div>
+        <h2>Buying a laptop shouldn't be confusing</h2>
+      </div>
+      <div class="why">
+        <div><h3>Honest advice</h3><p>We help you choose for what you actually do, not the most expensive model on the shelf.</p></div>
+        <div><h3>Check before you buy</h3><p>See and test the laptop in the shop before you pay.</p></div>
+        <div><h3>[Warranty / service]</h3><p>Add the shop's warranty, upgrades or after-sales service here.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" style="border-bottom:0">
+    <div class="wrap">
+      <div class="head">
+        <div class="label">Visit</div>
+        <h2>Come and see it in person</h2>
+      </div>
+      <div class="visit">
+        <div class="vbox">
+          <dl>
+            <div><dt>Shop</dt><dd>WINSYS Laptops (Winsystem Laptops)</dd></div>
+            <div><dt>Address</dt><dd>[Add full address], Kaduwela</dd></div>
+            <div><dt>Hours</dt><dd>Open until 6:00 PM. [Add opening time and days]</dd></div>
+            <div><dt>WhatsApp</dt><dd id="waText">[Add WhatsApp number]</dd></div>
+          </dl>
+        </div>
+        <div class="vbox" style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:1rem">
+          <div class="label">Map</div>
+          <p style="margin:0;color:var(--muted)">Your Google Maps pin goes here.</p>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=WINSYS+Laptops+Kaduwela" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; WINSYS Laptops &middot; Kaduwela</span>
+    <span>Your first laptop starts here</span>
+  </div>
+</footer>
+
+<a class="float-wa" id="floatWa" href="#visit">WhatsApp</a>
+
+<script>
+/* Add the shop's WhatsApp number here, e.g. '94771234567' */
+var WA = '';
+
+var $ = function(id){ return document.getElementById(id); };
+if (WA) {
+  $('floatWa').href = 'https://wa.me/' + WA;
+  $('floatWa').target = '_blank';
+  $('waText').innerHTML = '<a href="https://wa.me/' + WA + '" target="_blank" rel="noopener">+' + WA + '</a>';
+}
+
+/* ---- Photo slots ---- */
+document.querySelectorAll('[data-img]').forEach(function(el){
+  var src = 'img/' + el.getAttribute('data-img');
+  var p = new Image();
+  p.onload = function(){ el.style.setProperty('--img','url("'+src+'")'); el.classList.add('has-img'); };
+  p.src = src;
+});
+
+/* ---- Finder ---- */
+var pick = { use:'Studies', budget:'Rs. 100,000 to 200,000', cond:'Either', brand:'Any brand' };
+var GUIDE = {
+  'Studies':          { t:'For studies',          f:'Notes, assignments, Zoom classes and browsing.', s:[['Processor','Core i3 / Ryzen 3 or better'],['RAM','8 GB'],['Storage','256 GB SSD or more'],['Look for','Light body, long battery']] },
+  'Office work':      { t:'For office work',      f:'Documents, spreadsheets, email and video calls.', s:[['Processor','Core i5 / Ryzen 5'],['RAM','8 to 16 GB'],['Storage','512 GB SSD'],['Look for','Good keyboard, battery, webcam']] },
+  'Programming':      { t:'For programming',      f:'Coding, running tools and many tabs at once.', s:[['Processor','Core i5 / Ryzen 5 or better'],['RAM','16 GB'],['Storage','512 GB SSD'],['Look for','Full HD screen, comfortable keyboard']] },
+  'Design & editing': { t:'For design & editing', f:'Photo and video editing, design apps.', s:[['Processor','Core i7 / Ryzen 7'],['RAM','16 GB or more'],['Storage','512 GB to 1 TB SSD'],['Look for','Dedicated graphics, colour-accurate screen']] },
+  'Gaming':           { t:'For gaming',           f:'Modern games at smooth frame rates.', s:[['Processor','Core i5 / Ryzen 5 or better'],['RAM','16 GB'],['Graphics','Dedicated GPU (e.g. RTX series)'],['Look for','Good cooling, high refresh screen']] }
+};
+function render(){
+  var g = GUIDE[pick.use];
+  $('rTitle').textContent = g.t;
+  $('rFor').textContent = g.f;
+  var ul = $('rSpec'); ul.innerHTML = '';
+  g.s.concat([['Budget', pick.budget], ['Condition', pick.cond], ['Brand', pick.brand]]).forEach(function(r){
+    var li = document.createElement('li');
+    var a = document.createElement('span'); a.textContent = r[0];
+    var b = document.createElement('b'); b.textContent = r[1];
+    li.appendChild(a); li.appendChild(b); ul.appendChild(li);
+  });
+}
+document.querySelectorAll('.chips').forEach(function(group){
+  var key = group.getAttribute('data-group');
+  group.querySelectorAll('.chip').forEach(function(chip){
+    chip.addEventListener('click', function(){
+      group.querySelectorAll('.chip').forEach(function(c){ c.setAttribute('aria-pressed','false'); });
+      chip.setAttribute('aria-pressed','true');
+      pick[key] = chip.getAttribute('data-v');
+      render();
+    });
+  });
+});
+render();
+
+function openWA(text){
+  var box = $('sent');
+  box.classList.add('show');
+  if (!WA) {
+    box.textContent = 'Demo: the shop\'s WhatsApp number will be added here.';
+    return;
+  }
+  var url = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(text);
+  box.innerHTML = 'If WhatsApp did not open: <a target="_blank" rel="noopener">tap here to send</a>';
+  box.querySelector('a').href = url;
+  window.location.href = url;
+}
+
+$('finderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var name = $('fName').value.trim();
+  if (!name) { $('fName').focus(); return; }
+  openWA('Hi WINSYS, I am ' + name + '. I am looking for a laptop.\n' +
+    'Use: ' + pick.use + '\nBudget: ' + pick.budget + '\nCondition: ' + pick.cond + '\nBrand: ' + pick.brand +
+    '\nWhat do you have in stock?');
+});
+
+document.querySelectorAll('[data-ask]').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.getElementById('finder').scrollIntoView();
+    if (!WA) { $('sent').classList.add('show'); $('sent').textContent = 'Demo: the shop\'s WhatsApp number will be added here.'; return; }
+    window.location.href = 'https://wa.me/' + WA + '?text=' + encodeURIComponent('Hi WINSYS, please share prices for ' + b.getAttribute('data-ask') + '.');
+  });
+});
+
+/* ---- Mobile menu ---- */
+$('menuBtn').addEventListener('click', function(){ $('nav').classList.toggle('open'); });
+document.querySelectorAll('#nav a').forEach(function(a){ a.addEventListener('click', function(){ $('nav').classList.remove('open'); }); });
+</script>
+</body>
+</html>
